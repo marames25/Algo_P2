@@ -16,7 +16,7 @@ class MAxHeap{
             swap(heap[i],heap[largest]);
             heapifyDown(largest);
         }
-    }
+    } 
 
     void heapifyUp(int i){
         if(i==0)
@@ -140,10 +140,8 @@ public:
 
 void heapSort(vector<int>& arr) {
     MAxHeap h;
-    // build max heap from array
     for (int v : arr)
         h.insert(v);
-    // repeatedly extract max and store in reverse order
     for (int i = arr.size() - 1; i >= 0; i--)
         arr[i] = h.getMax();
 }
@@ -182,6 +180,7 @@ int main() {
     pq.push(40);
     pq.push(5);
     pq.push(25);
+    pq.pop();
     cout << "Priority Queue contents: ";
     pq.display();
 
