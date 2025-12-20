@@ -73,9 +73,9 @@ int main() {
         cout << "Iterative Sequential Search: Not found" << endl;
 
     if (recursiveResult != -1)
-        cout << "Recursive Sequential Search: Found at index " << recursiveResult << endl;
+        cout << "Recursive binary Search: Found at index " << recursiveResult << endl;
     else
-        cout << "Recursive Sequential Search: Not found" << endl;
+        cout << "Recursive binary Search: Not found" << endl;
 
 
     
